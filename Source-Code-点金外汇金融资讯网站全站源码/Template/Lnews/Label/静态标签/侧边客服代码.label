@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>256</LabelID>
+    <LabelName>侧边客服代码</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;!--手机浮动最下面的客服代码，通过CSS中的MYbottom定义--&gt;
+&lt;div class="d-block d-sm-none fixed-bottom MYbottom"&gt;
+&lt;a href="tel:021-50391046"&gt;&lt;i class="zi zi_phone"&gt;&lt;/i&gt; 联系官方服务热线&lt;/a&gt;
+&lt;a href="tel:13177777714"&gt;&lt;i class="zi zi_service"&gt;&lt;/i&gt; 24小时移动专家在线&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="kefu"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="tel:021-50391046"&gt;&lt;span&gt;联系我们&lt;/span&gt;&lt;i class="zi zi_phone zi_rotate90"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wpa.qq.com/msgrd?v=3&amp;uin=184886758&amp;site=qq&amp;menu=yes" target="_blank"&gt;&lt;span&gt;QQ在线客服&lt;/span&gt;&lt;i class="zi zi_tmQq" zico="qq"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="kefu_wechat"&gt;&lt;a href="javascript:;"&gt;&lt;span&gt;&lt;img src="/Template/V4/style/images/Big_Micro.jpg" alt="微信二维码" /&gt;&lt;/span&gt;&lt;i class="zi zi_tmWeixin" zico="微信"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Guest" target="_blank"&gt;&lt;span&gt;留言咨询&lt;/span&gt;&lt;i class="zi zi_msgchat"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="kefu_qrcode"&gt;&lt;a href="javascript:;"&gt;&lt;span&gt;&lt;img src="/Template/V4/style/images/Big_Micro.jpg" alt="微信二维码" /&gt;扫码分享到手机阅读&lt;/span&gt;&lt;i class="zi zi_qrcode"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>参数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <EmptyContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

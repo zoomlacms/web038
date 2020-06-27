@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>319</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/"&gt;网站首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/about/contactus"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/about/about"&gt;关于我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/about/job"&gt;加入我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/about/sitemap"&gt;站点地图&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="Copyright"&gt;
+{$Copyright/}
+&lt;/div&gt;
+&lt;/footer&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>参数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <EmptyContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

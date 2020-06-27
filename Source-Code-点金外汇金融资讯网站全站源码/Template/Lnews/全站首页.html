@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<meta name="baidu-site-verification" content="CPpfH7gZwe" />
+<title>{$SiteTitle/}_首页</title>
+{$PWAMainfirst/}
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+{ZL:GetCSS(1,0)/}
+<script id='zlchat' data-option='{"theme":"def","id":"1"}' src='/JS/Plugs/Chat/chat_def.js?v=1'></script>
+</head>
+<body>
+<div class="i_top">
+<div class="container">
+<a href="" class="top_sign">欢迎访问点金外汇资讯网站</a>
+<div class="row">
+<div class="col-md-3 col-12 home_head_l">
+<a href="/"><img src="{$CssDir/}/Images/logo.svg" alt="点金外汇"></a>
+</div>
+<div class="col-md-3 col-12 home_search">
+<div class="clearfix"></div>
+</div>
+<div class="col-md-6 col-12">
+<div class="home_head_r">
+<a href="/user"><i class="zi zi_user">会员登录</i></a>
+<form class="form-inline" role="search" action="/Search/SearchList" method="get"> <div class="input-group"> <input name="KeyWord" class="form-control" type="text" placeholder="搜索"> <div class="input-group-append"> <button class="input-group-text" type="submit" >搜索</button> </div> </div> </form>
+</div>
+<div class="cleafix">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--itop end-->
+
+<nav class="navbar navbar-expand-sm navbar-light inav" id="scolls">
+<div class="container nav_bg">
+<a class="navbar-brand nav_title" href="#"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+<div class="collapse navbar-collapse icollapse" id="navbarsExample03">
+<ul class="navbar-nav navUl">
+<li class="nav-item active"><a class="nav-link" href="/">首页</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(1)/}">新闻资讯</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(2)/}">在线开户</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(3)/}">汇市分析</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(4)/}">留言板块</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(5)/}">外汇学院</a></li>
+<li class="nav-item"><a class="nav-link" href="{ZL:GetNodeLinkUrl(6)/}">关于我们</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!--inav end-->
+<aside class="container iaside">
+<div class="row">
+<div class="col-md-1.5 asideCon1">
+<span>布伦特油</span><br>
+<strong>71.31</strong><br>
+<span>0.01(-0.42%)</span>
+</div>
+<div class="asideCon2">
+<span>伦敦金</span><br>
+<strong>1293.47</strong><br>
+<span>3.73(0.29%)</span>
+</div>
+<div class="asideCon3">
+<span>纳斯达克</span><br>
+<strong>8159.94</strong><br>
+<span>-37.5（-1.51%）</span>
+</div>
+<div class="asideCon4">
+<span>美元指数</span><br>
+<strong>98.077</strong><br>
+<span>-0.19(-0.20%)</span>
+</div>
+<div class="asideCon5">
+<span>标普500</span><br>
+<strong>2942.54</strong><br>
+<span>11.68(0.093%)</span>
+</div>
+<div class="asideCon6">
+<span>上证指数</span><br>
+<strong>3062.500</strong><br>
+<span>18.73(-0.774%)</span>
+</div>
+<div class="asideCon7">
+<span>深证成指</span><br>
+<strong>9622.490</strong><br>
+<span>45.4(-1.619%)</span>
+</div>
+</div>
+</aside>
+<!--aside  end-->
+
+<section class="container section_one">
+<div class="row">
+<div class="col-md-9 col-12">
+<div class="section_left">
+<div class="section_top">
+<!--conImg-->
+<div class="container conImg">
+<img src="{$CssDir/}Images/waihui1.jpg" alt="" title="点金外汇" />
+<div class="row conImg1">
+{ZL.Label id="首页文章六图_推荐" NodeID="1" TitleNum="30" ShowNum="6" ClassName="col-md-4 col-12" Order="desc" /}
+</div>
+</div>
+<!--conImg end-->
+
+<div class="container information">
+<h4>资讯</h4>
+<a href="{ZL:GetNodeLinkUrl(1)/}">更多&gt;&gt;</a>
+<ul>
+{ZL.Label id="首页资讯大列表_带时间与简介[仅带附图]" NodeID="1" TitleNum="30" ShowNum="6" sysLenth="300" Order="desc" /}
+</ul>
+</div>
+</div>
+<!--information end-->
+
+<div class="section_bottom" hidden>
+<div class="container ConThree">
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">专家</a> <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">机构</a> <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">百家</a> <a class="nav-item nav-link more" href="#"><span>更多&gt;&gt;</span></a>
+</div>
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-home" aria-labelledby="nav-home-tab">
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="nav-profile" aria-labelledby="nav-profile-tab">
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="nav-contact" aria-labelledby="nav-contact-tab">
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-12 ConThree_con">
+<div class="row">
+<div class="col-md-3 col-12 ConThree_img">
+<img src="{$CssDir/}Images/design_bg.jpg" alt="盛文兵">
+</div>
+<div class="col-md-9 col-12  ConThree_text">
+<p><a href="#">[盛文兵]</a></p>
+<p><a href="#">鲍威尔讲话偏鹰后，市场迎来美国12</a></p>
+<p>01-11 11:17</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--ConThree end-->
+
+<div class="container classCon">
+<h4>课程</h4>
+<a href="#">更多&gt;&gt;</a>
+<div class="row">
+<div class="col-md-6 col-12 classCon_left">
+<p>外汇初级学习</p>
+<img src="{$CssDir/}Images/kc1.jpg" alt="外汇初级学习"> <img src="{$CssDir/}Images/kc2.jpg" alt="外汇初级学习">
+</div>
+<div class="col-md-6 col-12 classCon_right">
+<p>外汇进阶学习</p>
+<a href="">学龄前</a> <a href="">幼儿园</a> <a href="">小学</a> <a href="">初中</a> <a href="">暑假</a> <a href="">高中</a> <a href="">大学</a> <a href="">毕业季</a>
+</div>
+</div>
+</div>
+<!--classCon end-->
+</div>
+</div>
+</div>
+<!--left end-->
+
+<div class="col-md-3 col-12">
+<div class="section_right">
+<div class="section_top2">
+<div class="yxjs">
+<h5>优秀经商</h5>
+<hr>
+<img src="{$CssDir/}Images/fxtmb.jpg" alt="优秀经商" /> <img src="{$CssDir/}Images/of.png" alt="优秀经商" /> <img src="{$CssDir/}Images/alpari122x50.jpg" alt="优秀经商" /> <img src="{$CssDir/}Images/of_180x140.jpg" alt="优秀经商" />
+</div>
+<!--yxjs end-->
+<div class="kx">
+<h5>快讯</h5>
+<hr>
+<!--
+<div class="list">
+<ul>
+<li><a href="#" target="_blank"><span>18:57</span>
+<p class="p1">英镑兑美元GBP/USD短线跳涨近百点，日内涨幅达0.68%，现报1.2823。英国外交...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:38</span>
+<p class="p1">WTI油价升至五周高位，现报52.85美元/盎司。中美贸易磋商乐观前景以及美元的走弱提供...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:33</span>
+<p class="p1">据彭博报导，李嘉诚称，许多国家GDP增长放缓。香港房地产市场今年或有更大的波动。购房者应...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:20</span>
+<p class="p1">上交所制定《上海证券交易所上市公司回购股份实施细则》，现予以发布，并自发布之日起施行。《...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:19</span>
+<p class="p1">中国央行：2019年1月11日，人民银行召开取消企业银行账户许可动员电视电话会议，深入贯...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:10</span>
+<p class="p1">据路透，德国总理默克尔表示，正为可能的英国无协议退欧情况作准备。英国退欧不会成为欧盟成员...</p>
+</a></li>
+<li><a href="#" target="_blank"><span>18:08</span>
+<p class="p1">吉利否认此前彭博的报道，称没有减持戴姆勒股份，仍为其最大股东。</p>
+</a></li>
+<li><a href="#" target="_blank"><span>点击浏览更多</span></a></li>
+</ul>
+</div>
+-->
+
+<iframe frameborder="0" width="245" height="1322" scrolling="yes" src="https://www.jin10.com/example/jin10.com.html?messageNum=50&fontSize=14px&theme=white"></iframe>
+</div>
+<!--ks end-->
+
+<!--
+<div class="cjrl">
+<h5>财经日历</h5>
+<hr>
+<a href="#" target="_blank">点击浏览更多</a>
+</div>
+-->
+<!--cjrl end-->
+
+<!--
+<div class="hdzq">
+<h5>活动专区</h5>
+<hr>
+<a href="#" target="_blank">点击浏览更多</a>
+-->
+</div>
+<!--hdzq end-->
+
+</div>
+
+<div class="section_bottom2" hidden>
+<div class="cjrl">
+<h5>财经日历</h5>
+<hr>
+<a href="#" target="_blank">点击浏览更多</a>
+</div>
+<!--cjrl end--> 
+<br>
+<div class="hdzq">
+<h5>活动专区</h5>
+<hr>
+<a href="#" target="_blank">点击浏览更多</a>
+</div>
+<!--hdzq end-->
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!--section end-->
+<section class="container hzhb">
+<h4>合作伙伴：</h4>
+<ul class="row">
+{ZL.Label id="友情链接列表" ShowNum="29" NodeID="5" /}
+<li><a href="{ZL:GetNodeLinkUrl(5)/}"> 更多&gt;&gt;</a></li>
+</ul>
+</section>
+<!--hzhb end-->
+
+<footer id="footer">
+<ul>
+<li><a href="/">网站首页</a></li>
+<li><a href="/about/contactus">联系我们</a></li>
+<li><a href="/about/about">关于我们</a></li>
+<li><a href="/about/job">加入我们</a></li>
+<li><a href="/about/sitemap">站点地图</a></li>
+</ul>
+<div class="Copyright">
+{$Copyright/}
+</div>
+</footer>
+
+<!--手机浮动最下面的客服代码，通过CSS中的MYbottom定义-->
+<div class="d-block d-sm-none fixed-bottom MYbottom">
+<a href="tel:17778952011"><i class="zi zi_phone"></i> 联系官方服务热线</a>
+<a href="tel:17778952011"><i class="zi zi_service"></i> 24小时移动专家在线</a>
+</div>
+<div class="kefu">
+<ul>
+<li><a href="tel:17778952011"><span>联系我们</span><i class="zi zi_phone zi_rotate90"></i></a></li>
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin=669645420&site=qq&menu=yes" target="_blank"><span>QQ在线客服</span><i class="zi zi_tmQq" zico="qq"></i></a></li>
+<li class="kefu_wechat"><a href="javascript:;"><span><img src="/Template/V4/style/images/Big_Micro.jpg" alt="微信二维码" /></span><i class="zi zi_tmWeixin" zico="微信"></i></a></li>
+<li><a href="/Guest" target="_blank"><span>留言咨询</span><i class="zi zi_msgchat"></i></a></li>
+<li class="kefu_qrcode"><a href="javascript:;"><span><img src="/Template/V4/style/images/Big_Micro.jpg" alt="微信二维码" />扫码分享到手机阅读</span><i class="zi zi_qrcode"></i></a></li>
+</ul>
+</div>
+
+<script>
+//固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6){IO.style.position=IO.fix?"":"fixed";IO.style.background=IO.fix?"":"#ffffff";IO.style.boxShadow=IO.fix?"":"0 5px 5px 0 rgba(50, 50, 50, 0.5)";}
+    IO.fix=!IO.fix;
+};
+
+
+/*显示搜索框*/
+/*
+function isSearch(){
+    $(".home_search").css("opacity","1").css("z-index","1").css("right","30%").css("top","0.5rem");
+    $(".navbar-nav").fadeOut(200);
+    $(".home_search .form-control").focus();
+}
+*/
+
+/*关闭搜索框*/
+/*
+function isClose(){
+    $(".home_search").css("opacity","0").css("z-index","-1").css("right","-1em");
+    $(".navbar-nav").fadeIn(1000);
+}
+*/
+
+</script>
+</body>
+</html>

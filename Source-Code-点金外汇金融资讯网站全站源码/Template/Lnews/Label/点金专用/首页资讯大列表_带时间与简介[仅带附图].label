@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>328</LabelID>
+    <LabelName>首页资讯大列表_带时间与简介[仅带附图]</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>点金专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,30,1,标题长度|ShowNum,10,1,调用信息数|sysLenth,300,1,简介长度|Order,asc$desc,3,排序方法</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Article ON ZL_CommonModel.ItemID=ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_CommonModel.TopImg, dbo.ZL_StripeTrimstr(content) as con</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99 and topimg&lt;&gt;''</LabelWhere>
+    <LabelOrder>CreateTime @Order</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="TopImg"/})/}" alt="{Field="Title"/}"&gt;&lt;/a&gt;
+&lt;strong&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/strong&gt;
+&lt;p&gt;{ZL:CutText({Field="con"/},@sysLenth,)/}&lt;/p&gt;
+&lt;span&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/span&gt;
+&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>参数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <EmptyContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Article"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

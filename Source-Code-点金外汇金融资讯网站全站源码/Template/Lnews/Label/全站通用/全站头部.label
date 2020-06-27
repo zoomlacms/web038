@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>318</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="i_top"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-md-3 col-12 home_head_l"&gt;
+&lt;a href="/"&gt;&lt;img src="{$CssDir/}/Images/logo.svg" alt="网集都"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-md-3 col-12 home_search"&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-md-6 col-12"&gt;
+&lt;div class="home_head_r"&gt;
+&lt;a href="/user"&gt;&lt;i class="zi zi_user"&gt;会员登录&lt;/i&gt;&lt;/a&gt;
+&lt;form class="form-inline" role="search" action="/Search/SearchList" method="get"&gt; &lt;div class="input-group"&gt; &lt;input name="KeyWord" class="form-control" type="text" placeholder="搜索"&gt; &lt;div class="input-group-append"&gt; &lt;button class="input-group-text" type="submit" &gt;搜索&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/form&gt;
+&lt;/div&gt;
+&lt;div class="cleafix"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--itop end--&gt;
+
+&lt;nav class="navbar navbar-expand-sm navbar-light inav" id="scolls"&gt;
+&lt;div class="container nav_bg"&gt;
+&lt;a class="navbar-brand nav_title" href="#"&gt;&lt;/a&gt;
+&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"&gt; &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt; &lt;/button&gt;
+&lt;div class="collapse navbar-collapse icollapse" id="navbarsExample03"&gt;
+&lt;ul class="navbar-nav navUl"&gt;
+&lt;li class="nav-item active"&gt;&lt;a class="nav-link" href="/"&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(2)/}"&gt;外汇&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(1)/}"&gt;新闻资讯&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(3)/}"&gt;在线开户&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(7)/}"&gt;汇市分析&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav-item"&gt;&lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(8)/}"&gt;外汇学院&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!--inav end--&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>参数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <EmptyContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

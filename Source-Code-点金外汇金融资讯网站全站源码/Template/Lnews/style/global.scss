@@ -1,0 +1,318 @@
+//CSS预编译文件基于Sass语法
+//这是Zoomla!逐浪CMS团队优化的Sass模板，我们为你预置了逐浪字库官方团队的高品质webFont之CDN库，你可完全采用中文定义写作，如下面写法都是合格
+//$中国变量之一:12px;
+//$中国人民中华人民共和国变量之二:#ff0;
+//.a1{width:$中国变量之一 ;}
+//.a2{background: $中国人民中华人民共和国变量之二;}
+//建议CSS注释写在代码段的起始处以使阅读更加流畅
+
+/* 全局样式定义 Powered by Zoomla!逐浪CMS z01.com*/
+//逐浪官方混合库取消下方一行注释 方法可见https://code.z01.com/Sass/mixin.html
+@import "zoomlaCMS";
+/* 第一行引用逐浪字库web版演染 */
+//@import url("http://code.z01.com/Zfont.css");
+a{color: currentColor;}
+a:hover{text-decoration: none;}
+
+
+//头部
+.i_top {/*background: url(Images/top_banner.jpg) no-repeat center;background-size: cover;*/ background: #00f;color: #fff;
+.top_sign{margin-left: 0.5rem;font-size: 0.9rem;}
+.top_sign:hover{color: #ccc;border-bottom: 1px solid #ccc;}
+img {width: 12rem;height: 7rem;}
+}
+
+#scolls{width: 100%;top: 0;z-index: 99999999;}
+	
+.home_head_r{
+i{float: right;margin-top: 3.5rem;margin-left: 1.5rem;}
+form{float: right;margin-top: 3rem;}
+}
+
+.inav{padding-top: 0;padding-bottom: 0; background: /*#1e7bba*/#00f !important;
+.icollapse{margin-left: -1rem;}
+.navUl a{margin-right: 3rem;line-height: 2.5rem;color: #fff!important;font-size: larger;font-weight: 700;}
+.navUl a:hover, .navUl .active a{background:rgba(12,89,170,1.00);} 
+.navbar-brand img{width: 10rem;height: 4rem;}
+}
+
+.inav_r{list-style: none;
+li{margin-right: 5rem;color: #fff; float: left;
+  a{color:#fff;font-size: larger;}
+  a:hover{color:#eee;}
+}
+}
+
+ .meune{ color: #389dcd; }
+
+//首页原油报表
+.iaside{padding-top: 1rem;}
+
+.asideCon1,.asideCon2,.asideCon3,.asideCon4,.asideCon5,.asideCon6,.asideCon7,.asideCon8{margin-left: 1rem; margin-right: 2rem; float: left;}
+
+//内容页
+.section_one{margin-top: 1rem;min-height: 60rem;}
+
+//内容页左边的上部分
+.section_top{background-color: #fff;}
+
+//内容页左边的下部分
+.section_bottom{background-color: #fff;}
+
+.conImg{
+&>img{margin-left: -1rem;margin-right: -1rem; width: 104%;height: 8rem;border: 1px solid rgba(216,205,101,1.00);}
+&>img:hover{transform: scale(1.02);transition: all 0.6s;}
+}
+
+.conImg1{
+img{ padding: 0;margin-top: 1rem; width: 100%;height: 10rem;}
+img:hover{transform: scale(1.02);transition: all 0.6s;}
+}
+
+
+//首页咨讯
+.information{margin-top: 2rem; 
+ul{@include myul;}
+li{margin-top: 0.6rem; border-bottom: 1px solid #eee;}
+li img{float: left;padding-right: 1rem; width:17.6rem;height: 8.4rem;}
+p{margin-bottom: 0;font-size: 0.90rem;color: #666;}
+span{line-height: 2.08rem;}
+
+h4{display: inline-block;}
+.informationList{margin-top: 1rem; border: 1px solid #ccc;}
+}
+
+.information>a{float: right;color: #777;}
+
+.information_img{padding: 0;
+img{width: 100%;height: 10rem;}
+&:hover{transform: scale(1.02);transition: all 0.6s;}
+}
+
+.information_text {margin-top: 1rem;
+p {margin-bottom: 0.5rem; font-size: 0.9rem;color: #777;}
+span{font-size: 0.92rem;}
+}
+
+//内容页：专家
+.ConThree{margin-top: 1rem; min-height: 20rem;
+.ConThree_con{margin-top: 1rem;}
+}
+
+.ConThree>a{float: right;color: #DCD4D4;}
+
+.ConThree_img {
+img{width: 100%;height: 5rem;}
+}
+
+.ConThree_text{padding: 0;
+p{margin-bottom:0.5rem; font-size: 0.92rem;}
+}
+
+.more{margin-left: 64%;font-size: 0.92rem;}
+
+//内容页：课程
+.classCon{margin-top: 2rem;margin-bottom: 2rem;min-height: 26rem;
+p{margin-top: 2rem;}
+img{margin-top: 1.5rem;width: 100%;}
+}
+
+.classCon>a{float: right;color: #777;}
+
+.classCon_right {padding-left: 1.5rem;
+a{display: inline-block;width: 8rem;margin-right:2rem;margin-top: 1.5rem; line-height:2.5rem;border: solid 3px rgba(56,157,205,1.00);border-radius: 5px;text-align: center;background: rgba(56,157,205,1.00);color: #FFF;}
+}
+
+//内容页右边
+.section_top2{background-color: #fff}
+
+.section_bottom2{margin-top: 1rem; background-color: #fff}
+
+//优秀经商
+.yxjs{
+h5{padding-top: 1rem;margin-left: 0.5rem;}
+img{margin-top: 0.4rem;margin-left: 0.5rem; width: 7rem;height: 3rem;}
+}
+
+//快讯
+.kx{
+h5{padding-top: 1rem;margin-left: 0.5rem;}
+}
+
+.list{
+ul{padding: 0;margin-top: 1rem;margin-left: 0.5rem;margin-right: 0.5rem; list-style: none;}
+li:nth-of-type(odd){ background: rgb(249, 249, 249);}
+li:last-child{margin-left: 4rem; width: 45%; border: solid 1px rgba(56,157,205,1.00);border-radius: 5px;text-align: center;}
+a{font-size: 0.92rem;}
+} 
+
+//财经日历
+.cjrl{
+h5{padding-top: 1rem;margin-left: 0.5rem;}
+a{display: block;margin-left: 4rem;width: 45%;font-size: 0.92rem;border: solid 1px rgba(56,157,205,1.00);border-radius: 5px;text-align: center;}
+}
+
+//活动专区
+.hdzq{padding-bottom: 2rem; margin-top:1rem;
+h5{padding-top: 1rem;margin-left: 0.5rem;}
+a{display: block;margin-left: 4rem; width: 45%;font-size: 0.92rem;border: solid 1px rgba(56,157,205,1.00);border-radius: 5px;text-align: center;}
+}
+
+//合作伙伴
+.hzhb{
+ul{padding: 0;margin-top: 1rem;margin-left: 5rem;list-style: none;
+   li{width: 20%; float: left;}
+}
+}
+
+//底部
+footer {min-height: 13rem;margin-top: 0.5rem; background:#000;
+ul{text-align: center;list-style-type: none;color: #777;
+  li{display: inline-block;margin-left: 1rem;margin-right: 1rem;line-height: 4rem;}
+}
+}
+
+.Copyright {color: #777;text-align: center;}
+
+//新闻资讯
+.bs-header{margin-top: 1rem;}
+
+.ibanner1{display: flex;min-height: 23rem;background-image:url(Images/banner1.jpg);background-size: cover; align-items: center;justify-content: center;
+h1{color: rgba(255, 255, 255, 0.8);font-size: 2.68rem;font-weight: 100;font-family: Helvetica Neue, PingFang SC, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STXihei, \\534E\6587\7EC6\9ED1, sans-serif;}
+}
+
+.conNewsC_right{margin-top: -1rem;}
+
+.conNewsC_right_Tabs {padding-left:0.5rem;margin-top: 1rem;min-height: 23rem;background: linear-gradient(45deg, rgba(54, 158, 215, 0.4), rgba(68, 164, 196, 0.4), rgba(89, 175, 170, 0.4));
+h3 {padding-top: 1rem;text-align: center;font-size: 1.2rem;line-height: 2.6rem;}
+.ilink{padding-bottom: 0;width: 49%;text-align: center;border-top-left-radius: 0;border-top-right-radius: 0;border: none;background: rgba(54, 158, 215, 0.4);}
+ul{margin-left: -2rem; list-style: none;}
+li{padding-left: 0.4rem;line-height: 2.6rem;border-bottom: 1px solid rgba(255, 255, 255, 0.3);font-size: 0.92rem;color: #fff;}
+#nav-tab .active::after {display: block;left: 0;margin: auto;bottom: 0;width: 0;content: "";border-style: solid;z-index: 1;transition: 0.2s ease;border-width: 0 0.5rem 0.5rem 0.5rem;border-color: rgba(68, 164, 196, 0.4) rgba(0, 0, 0, 0);
+}
+}
+
+//热门文章
+.news_list{padding-left:0.5rem;padding-right: 0.5rem;background: #fff;}
+
+.news_list_t {padding-top: 1rem; border-bottom: 1px dotted #e4e9f0;
+h2{line-height: 1.68rem; font-size: 1.2rem;}
+h3{margin-bottom: -0.2rem; font-size: 1.2rem;line-height: 2.6rem;border-bottom: 2px solid #f90;float: left;}
+}
+
+.news_list_c ul{margin-top: 0.5rem;
+li{line-height: 3rem;height: 3rem;overflow: hidden;border-bottom: 1px dashed #f0f0f0;
+   i{display: inline-block;margin-right: 0.5rem;width: 1rem;height: 1rem;background: #aaa;line-height:1rem;text-align: center;color: #fff;font-style: normal;}
+   a{color: #3071a9;font-size: 0.9rem;}
+   span{font-size: 1.1em;color:#555;float: right;}
+}
+li:nth-child(10n+1) i{background: #FC9B0B;}
+}
+
+//资讯中心
+.mysite{margin-top: 0.5rem;}
+
+//广告位
+.ibanner2{display: flex;min-height:  23rem;background-image:url(Images/banner2.jpg);background-size: cover; align-items: center;justify-content: center;
+h1{color: rgba(255, 255, 255, 0.8);font-size: 2.68rem;font-weight: 100;font-family: Helvetica Neue, PingFang SC, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STXihei, \\534E\6587\7EC6\9ED1, sans-serif;}
+}
+
+.myContent_l{min-height: 30rem;background: #fff;
+h1 {padding-top: 2rem;font-size: 1.6rem;text-align: center;font-weight: 100;}
+}
+
+.myAbbr2{line-height: 3rem;text-align: center;}
+
+.myContent{@include 段落文本对齐处理;margin: 1rem; min-height: 20rem;}
+
+//友情链接
+.topbanner{display: flex;min-height:  20rem;background:url(Images/qyln_event_bg.jpg);background-size: cover; align-items: center;justify-content: center;
+h1{color: rgba(255, 255, 255, 0.8);font-size: 2.68rem;font-weight: 100;font-family: Helvetica Neue, PingFang SC, Microsoft Yahei, \\5FAE\8F6F\96C5\9ED1, STXihei, \\534E\6587\7EC6\9ED1, sans-serif;}
+}
+
+.mySite{margin-top: 0.5rem;
+li a{font-size: 0.92rem;}
+}
+
+.ifriendSite{
+ul{@include myul;margin-left: 1rem;
+  li{margin-top: 0.5rem;margin-bottom: 0.5rem; float: left;width: 20%;}
+  li a{font-size: 0.92rem;}
+}
+}
+
+//在线咨询
+/*最下面浮动定义，默认隐藏需-仅手机模式显示*/
+.MYbottom { background: rgba(38, 62, 132, 0.5); line-height: 4rem; color: #fff; text-align: center; }
+.MYbottom a { color: #fff; }
+
+/*右侧固定在线客服*/
+.kefu { position: fixed; top: 50%; right: 20px; margin-top: -87px; width: 2.3rem; text-align: center;}
+
+.kefu ul { padding-left: 0; margin-bottom: 0; list-style: none; }
+
+.kefu a { position: relative; float: right; margin-top: 0.1rem; padding-right: 1.8rem; width: 34px; height: 34px; line-height: 34px; background: #7a6e6e; color: #fff; border-radius: 4px; overflow: hidden; transition: width 0.5s; -moz-transition: width 0.5s; -webkit-transition: width 0.5s; -o-transition: width 0.5s; }
+
+.kefu li i { display: block; position: absolute; float: right; top: 0; right: 0px; height: 34px; width: 34px; line-height: 34px; font-size: 20px; background: #7a6e6e; border-radius: 4px; z-index: 10; }
+
+.kefu a:hover { background: #c81623; width: 100px; }
+
+.kefu a:hover span { display: block; }
+
+.kefu a:hover i { background: #c81623; }
+
+.kefu li span { font-size: 0.9rem; }
+
+.kefu li.kefu_qrcode a { overflow: visible; }
+
+.kefu li.kefu_qrcode a:hover { width: 191px; }
+
+.kefu li.kefu_qrcode a:hover span { display: block; }
+
+.kefu li.kefu_qrcode a span { display: none; margin-left: 0; margin-top: -58px; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0; background: #c81623; border-radius: 4px; width: 155px; }
+.kefu li.kefu_qrcode a span img { display: block; width: 135px; }
+
+.kefu li.kefu_wechat a { overflow: visible; }
+
+.kefu li.kefu_wechat a:hover { width: 191px; }
+
+.kefu li.kefu_wechat a:hover span { display: block; }
+
+.kefu li.kefu_wechat a span { display: none; margin-left: 0; margin-top: -58px; }
+
+.kefu li.kefu_wechat a span img { padding: 10px; background: #c81623; border-radius: 4px; width: 155px; }
+
+
+/*769-1930分辨率之间传统低分屏幕优化*/
+@media only screen and (min-width: 769px) and (max-width: 1930px) { 
+
+
+
+}
+/*小于768px手机优化*/
+@media screen and (max-width: 768px) { 
+.container { max-width: 100%; }
+.inav{position: relative !important;}
+
+.information{
+li img{width: 100%;}
+
+}
+
+footer{ 
+ul{padding: 0;}
+p{margin-left: 1rem;}
+}
+
+.topbanner{margin-top: 0;}
+
+
+
+}
+
+
+
+
+
+
+/*key:UG93ZXJlZCBieSBab29tbGEh6YCQ5rWqQ01TIHd3d3cuejAxLmNvbQ== */

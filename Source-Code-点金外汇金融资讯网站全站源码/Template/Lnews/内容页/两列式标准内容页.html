@@ -1,0 +1,126 @@
+﻿{ZL.Source id="文章模型数据源标签"/}<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+{ZL:GetCSS(1,0)/}
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+
+<div class="ibanner2">
+<h1>快讯</h1>
+</div>
+<!-- ibanner1 end -->
+
+<div class="news_body">
+<div class="container">
+<nav aria-label="breadcrumb" role="navigation" class="container mysite">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V4" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="breadcrumb-item active">正文 </li>
+</ol>
+</nav>
+<!--mysite end-->
+<div class="row">
+<div class="col-12 col-sm-9">
+<div class="myContent_l">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="myAbbr2">
+ <span id="CreateTime">发表于：{ZL:FormatDate({SField sid="文章模型数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> <span id="Hits">浏览数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}"></SCRIPT> 
+<span id="favs"><a href="/user/content/addtofav?infoid={SField sid="文章模型数据源标签" FD="GeneralID"/}&type=1&title={SField sid="文章模型数据源标签" FD="Title" page="0"/}&url={$SiteURL/}/item/{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}.aspx" target="_blank"><i class="zi zi_heart" aria-hidden="true"></i> 收藏</a></SCRIPT></span>
+</div>
+<div class="myContent">{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}</div>
+<div id="T_page">{ZL.Page id="默认内容分页标签" num="{SField sid="文章模型数据源标签" FD="pages" page="0"/}"/}</div>
+<div class="col-lg-12 col-md-12 col-xs-12">
+<div class="edit"><span class="print"><a href="{ZL:GetLastinfo(1)/}?generalid={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}" target="_blank">打印</a></span><span id="elit">编辑：{SField sid="文章模型数据源标签" FD="Edit" page="0"/}</span> <span id="pin"><a href="/Comments/CommentFor?ID={SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}" target="_blank">评论>></a></span></div>
+ <div id="begin"><span id="asc">上一篇文章：{ZL.Label id="上一篇文章" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</span> <span id="desc">下一篇文章：{ZL.Label id="下一篇文章" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</span></div>
+<div id="about">
+<span>相关文章</span>
+<ul>
+{ZL.Label id="相关文章列表输出" ShowNum="10" TitleNum="35" KeyWord="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" /}
+</ul>
+</div>
+{ZL:CopyRight({SField sid="文章模型数据源标签" FD="GeneralID" page="0"/})/}
+
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-12 col-sm-3">
+<div class="news_list">
+<div class="news_list_t"><h2>分享</h2><div class="clearfix"></div></div>
+<div class="news_share">
+<div class="bdsharebuttonbox">
+<a class="bds_more" href="#" data-cmd="more"></a>
+<a title="分享到QQ空间" class="bds_qzone" href="#" data-cmd="qzone"></a>
+<a title="分享到新浪微博" class="bds_tsina" href="#" data-cmd="tsina"></a>
+<a title="分享到腾讯微博" class="bds_tqq" href="#" data-cmd="tqq"></a>
+<a title="分享到人人网" class="bds_renren" href="#" data-cmd="renren"></a>
+<a title="分享到微信" class="bds_weixin" href="#" data-cmd="weixin"></a>
+</div>
+
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</div>
+</div>
+<div class="news_list">
+<div class="news_list_t"><h2>热门文章</h2><div class="clearfix"></div></div>
+<div class="news_list_c">
+<ul class="list-unstyled">
+{ZL.Label id="输出指定节点标题_带点击v4" NodeID="1" TitleNum="34" ShowNum="10" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!--主体结束 -->
+<div class="Assis_Div"></div>
+
+{ZL.Label id="全站底部"/}
+{ZL.Label id="侧边客服代码"/}
+<script>
+//固顶事件
+var IO=document.getElementById('myNav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6){IO.style.position=IO.fix?"":"fixed";IO.style.background=IO.fix?"":"rgba(52, 104, 95, 0.9)";IO.style.boxShadow=IO.fix?"":"0 5px 5px 0 rgba(50, 50, 50, 0.5)";}
+    IO.fix=!IO.fix;
+};
+
+/*显示搜索框*/
+function isSearch(){
+    $(".home_search").css("opacity","1").css("z-index","1").css("right","0").css("top","0.5rem");
+    $(".home_top_nav").fadeOut(200);
+    $(".home_search .form-control").focus();
+}
+/*关闭搜索框*/
+$(".shop_top .navbar-nav>li.dropdown").mouseover(function(){
+	$(this).addClass("open");
+}).mouseout(function(){
+	$(this).removeClass("open");
+});
+
+//栏目指示器
+$().ready(function(e) {
+    $("#menu{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}").addClass("active");
+
+})
+
+</script>
+</body>
+</html>
